@@ -1,0 +1,181 @@
+.About {
+  position: relative;
+  background-image: url("../../assets/images/triangle-shape-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  transition: background-position 0.4s;
+}
+
+.About .Title h1 {
+  padding-right: 90px;
+}
+
+.About .Description {
+  text-transform: uppercase;
+}
+
+.About .Text {
+  width: 85%;
+  margin: 0;
+  box-shadow: -2px -6px 4px 4px rgba(3, 3, 3, 0.4);
+  border: 5px solid #fff;
+  border-radius: 50px;
+}
+.About .Text p {
+  width: 100%;
+  padding: 26px 30px;
+  font-size: 22px;
+  text-align: left;
+}
+
+.About .Lozenge {
+  width: 720px;
+  height: 720px;
+  transform: rotate(45deg) translate(10%, -15%);
+  border-radius: 100px;
+}
+
+.About .Lozenge img {
+  width: 135%;
+  transform: rotate(-45deg) translate(12%, -25%);
+}
+
+.About .LeftContentHolder {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.About .Title {
+  top: 1em;
+  margin: 0;
+}
+.About .Description {
+  text-align: left;
+  margin-bottom: 0;
+}
+.About .Description h2 {
+  width: 100%;
+  margin-left: 36px;
+}
+
+.About .Triangles {
+  bottom: 15%;
+  right: 5%;
+}
+
+@media screen and (max-width: 1600px) {
+  .About .Title {
+    top: 2em;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .About {
+    background-position: 40em 0;
+    background-size: contain;
+  }
+  .About .Lozenge {
+    width: 560px;
+    height: 560px;
+    transform: rotate(45deg) translate(-0%, -0%);
+    top: 0%;
+    left: 25%;
+  }
+  .About .Text {
+    width: 95%;
+  }
+  .About .Title {
+    top: 2em;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .About {
+    background-image: unset;
+  }
+  .About .SingleRow {
+    flex-direction: column-reverse;
+  }
+  .About .LeftContentHolder {
+    top: 20%;
+    z-index: 50;
+  }
+  .About .Lozenge {
+    width: 360px;
+    height: 360px;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    border-radius: 40px;
+    transform: rotate(45deg) translate(-20%, -40%);
+  }
+  .About .Title {
+    top: -4em;
+  }
+  .About .Text {
+    width: 100%;
+  }
+  .About .Triangles {
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .About .Lozenge {
+    width: 420px;
+    height: 420px;
+    transform: rotate(45deg) translate(-40%, -45%);
+  }
+  .About .Text p {
+    width: 90%;
+    padding: 10px 12px;
+    font-size: 18px;
+  }
+  .About .LeftContentHolder {
+    top: 25%;
+  }
+  .About .Title {
+    margin: 0;
+    top: 0;
+  }
+  .About .Triangles {
+    top: -50%;
+    left: -20%;
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .About .Lozenge {
+    width: 380px;
+    height: 380px;
+    transform: rotate(45deg) translate(-50%, -45%);
+  }
+  .About .Triangles {
+    top: 25%;
+    left: 0;
+  }
+  .About .LeftContentHolder {
+    top: 50%;
+    margin: 0;
+  }
+  .About .Title {
+    left: -10%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .About .Title {
+    left: 0;
+    margin: auto;
+  }
+}
+
+@media screen and (max-height: 576px) {
+  .About .Lozenge {
+    transform: rotate(45deg) translate(-50%, -45%);
+  }
+  .About .LeftContentHolder {
+    transform: translateY(0);
+  }
+}

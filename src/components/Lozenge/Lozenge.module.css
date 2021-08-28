@@ -1,0 +1,91 @@
+.Lozenge {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  transform: rotate(45deg);
+  border: 10px solid #fff;
+  border-radius: 80px;
+  overflow: hidden;
+  margin: auto;
+  transition: all 0.4s ease;
+  box-shadow: -8px -8px 8px 0px rgba(4, 4, 4, 0.53);
+  background: rgb(241, 190, 65);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1be41",endColorstr="#edb93f",GradientType=1);
+}
+
+.Lozenge img {
+  width: 135%;
+  transform: rotate(-45deg) translate(12%, -20%);
+}
+
+@media screen and (max-width: 1400px) {
+  .Lozenge {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Lozenge {
+    width: 360px;
+    height: 360px;
+    border-radius: 60px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Lozenge {
+    width: 320px;
+    height: 320px;
+    border-radius: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Lozenge {
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Lozenge {
+    width: 240px;
+    height: 240px;
+    border-radius: 35px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Lozenge {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .Lozenge {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+  }
+}

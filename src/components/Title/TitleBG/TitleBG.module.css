@@ -1,0 +1,71 @@
+.TitleBG {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  height: 210px;
+  margin: auto;
+  transition: 0.4s all;
+}
+
+.TitleBG img,
+.Text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.TitleBG img {
+  width: 480px;
+  transition: width 0.35s;
+  height: auto;
+}
+
+.TitleShape:nth-child(1) {
+  background-image: url("../../../assets/images/shape-1.png");
+}
+.TitleShape:nth-child(2) {
+  background-image: url("../../../assets/images/shape-2.png");
+}
+.TitleShape:nth-child(3) {
+  background-image: url("../../../assets/images/shape-3.png");
+}
+
+@media screen and (max-width: 1600px) {
+  .TitleBG img {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .TitleBG img {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .TitleBG img {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .TitleBG img {
+    width: 380px;
+  }
+  .TitleBG {
+    height: 170px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .TitleBG img {
+    width: 260px;
+  }
+  .TitleBG {
+    height: 115px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .TitleBG img {
+    width: 240px;
+  }
+}

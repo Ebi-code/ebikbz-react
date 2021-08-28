@@ -1,0 +1,10 @@
+.SocialMedia {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 40px;
+}

@@ -1,0 +1,39 @@
+.CarouselItem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -200%;
+  /* opacity: 0; */
+  transition: 1s ease;
+  animation: hide 1s linear;
+}
+
+.CarouselItem.Active {
+  transition: 1s ease;
+  opacity: 1;
+  left: 0;
+  bottom: 0;
+  animation: active 0.8s linear;
+  z-index: 10;
+}
+
+@keyframes active {
+  0% {
+    left: -90%;
+    bottom: -90%;
+  }
+  100% {
+    left: 0;
+    bottom: 0;
+  }
+}
+@keyframes hide {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  100% {
+    top: -100%;
+    right: -100%;
+  }
+}

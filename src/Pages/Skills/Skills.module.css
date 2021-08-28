@@ -1,0 +1,96 @@
+.Skills {
+  position: relative;
+  background-image: url("../../assets/images/triangle-shape.png"),
+    url("../../assets/images/triangle-shape-4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% -30em, -75% 0em;
+  transition: background-position 0.4s;
+}
+
+.Skills .Lozenge {
+  width: 120px;
+  height: 120px;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+.Skills .Lozenge img {
+  width: 80px;
+  height: 80px;
+  transform: rotate(-45deg) translate(0, 25%);
+}
+
+.Skills .SingleRow {
+  width: 80%;
+  height: 90%;
+  margin: 100px auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .Skills {
+    background-position: 100% -32em, -100% 8em;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Skills {
+    background-position: 100% -32em, -100% 22em;
+  }
+}
+@media screen and (max-width: 992px) {
+  .Skills {
+    background-image: unset;
+  }
+  .Skills .SingleRow {
+    flex-direction: row;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .Skills .Skill {
+    height: 60%;
+  }
+  .Skills .Progress {
+    width: 120px;
+    height: 120px;
+  }
+  .Skills img {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Skills .Skill {
+    height: 50%;
+  }
+  .Skills img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Skills {
+    width: 100%;
+  }
+  .Skills .SingleRow {
+    display: block;
+  }
+  .Skills .Skill {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Skills .SingleRow {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 576px) {
+  .Skills .Skill {
+    height: 90%;
+    margin: 20px;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-height: 320px) {
+  .Skills .Skill {
+    margin: 14px;
+  }
+}

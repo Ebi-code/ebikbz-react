@@ -1,0 +1,28 @@
+.Button {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  background-color: #040404;
+  border: 4px solid #fff;
+  padding: 10px 15px;
+  color: #fcd602;
+  font-weight: bolder;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 -6px 8px 0px rgba(4, 4, 4, 0.53);
+  font-family: "fugaz one";
+  letter-spacing: 2px;
+}
+
+.Button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 576px) {
+  .Button {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

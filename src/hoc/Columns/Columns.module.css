@@ -1,0 +1,13 @@
+.Columns {
+  position: relative;
+  flex: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .Columns {
+    padding: 0;
+  }
+}

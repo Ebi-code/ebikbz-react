@@ -1,0 +1,24 @@
+.SectionContainer {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .SectionContainer {
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .SectionContainer {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-height: 576px) {
+  .SectionContainer {
+    overflow-y: auto;
+  }
+}

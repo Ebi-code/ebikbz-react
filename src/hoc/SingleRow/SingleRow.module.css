@@ -1,0 +1,14 @@
+.SingleRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .SingleRow {
+    flex-direction: column-reverse;
+  }
+}

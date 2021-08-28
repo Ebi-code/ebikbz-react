@@ -1,0 +1,20 @@
+.Text {
+  width: 65%;
+  margin: auto;
+}
+.Text p {
+  text-align: center;
+  padding: 15px;
+}
+
+.Text * {
+  font-weight: 400;
+  color: #030303;
+  font-family: "montserrat";
+}
+
+@media screen and (max-width: 576px) {
+  .Text {
+    width: 100%;
+  }
+}

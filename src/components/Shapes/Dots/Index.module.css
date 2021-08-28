@@ -1,0 +1,74 @@
+.Dots {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.Dots span {
+  position: absolute;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50em;
+  background-color: #000;
+  box-shadow: 0 10px 0px 0px #000, 0 20px 0px 0px #000, 0 30px 0px 0px #000,
+    0 40px 0px 0px #000, -10px 10px 0px 0px #000, -10px 20px 0px 0px #000,
+    -20px 20px 0px 0px #000, -10px 30px 0px 0px #000, -20px 30px 0px 0px #000,
+    -30px 30px 0px 0px #000, -10px 40px 0px 0px #000, -20px 40px 0px 0px #000,
+    -30px 40px 0px 0px #000, -40px 40px 0px 0px #000;
+  animation: stars 2s infinite ease-in-out;
+}
+
+@keyframes stars {
+  0% {
+    background-color: transparent;
+  }
+  10% {
+    box-shadow: 0 10px 0px 0px transparent, 0 20px 0px 0px #000,
+      0 30px 0px 0px transparent, 0 40px 0px 0px #000, -10px 10px 0px 0px #000,
+      -10px 20px 0px 0px #000, -20px 20px 0px 0px #000, -10px 30px 0px 0px #000,
+      -20px 30px 0px 0px #000, -30px 30px 0px 0px transparent,
+      -10px 40px 0px 0px #000, -20px 40px 0px 0px transparent,
+      -30px 40px 0px 0px #000, -40px 40px 0px 0px #000;
+  }
+  25% {
+    box-shadow: 0 10px 0px 0px #000, 0 20px 0px 0px transparent,
+      0 30px 0px 0px #000, 0 40px 0px 0px transparent, -10px 10px 0px 0px #000,
+      -10px 20px 0px 0px #000, -20px 20px 0px 0px #000, -10px 30px 0px 0px #000,
+      -20px 30px 0px 0px #000, -30px 30px 0px 0px #000, -10px 40px 0px 0px #000,
+      -20px 40px 0px 0px #000, -30px 40px 0px 0px transparent,
+      -40px 40px 0px 0px #000;
+  }
+  50% {
+    background-color: #000;
+    box-shadow: 0 10px 0px 0px #000, 0 20px 0px 0px #000, 0 30px 0px 0px #000,
+      0 40px 0px 0px #000, -10px 10px 0px 0px transparent,
+      -10px 20px 0px 0px #000, -20px 20px 0px 0px #000, -10px 30px 0px 0px #000,
+      -20px 30px 0px 0px transparent, -30px 30px 0px 0px #000,
+      -10px 40px 0px 0px #000, -20px 40px 0px 0px #000, -30px 40px 0px 0px #000,
+      -40px 40px 0px 0px transparent;
+  }
+  75% {
+    box-shadow: 0 10px 0px 0px #000, 0 20px 0px 0px #000, 0 30px 0px 0px #000,
+      0 40px 0px 0px #000, -10px 10px 0px 0px #000, -10px 20px 0px 0px #000,
+      -20px 20px 0px 0px transparent, -10px 30px 0px 0px #000,
+      -20px 30px 0px 0px #000, -30px 30px 0px 0px #000,
+      -10px 40px 0px 0px transparent, -20px 40px 0px 0px #000,
+      -30px 40px 0px 0px #000, -40px 40px 0px 0px #000;
+  }
+  90% {
+    box-shadow: 0 10px 0px 0px #000, 0 20px 0px 0px #000, 0 30px 0px 0px #000,
+      0 40px 0px 0px #000, -10px 10px 0px 0px #000, -10px 20px 0px 0px #000,
+      -20px 20px 0px 0px #000, -10px 30px 0px 0px #000, -20px 30px 0px 0px #000,
+      -30px 30px 0px 0px #000, -10px 40px 0px 0px transparent,
+      -20px 40px 0px 0px #000, -30px 40px 0px 0px #000, -40px 40px 0px 0px #000;
+  }
+  100% {
+    box-shadow: 0 10px 0px 0px #000, 0 20px 0px 0px #000, 0 30px 0px 0px #000,
+      0 40px 0px 0px #000, -10px 10px 0px 0px #000,
+      -10px 20px 0px 0px transparent, -20px 20px 0px 0px #000,
+      -10px 30px 0px 0px transparent, -20px 30px 0px 0px #000,
+      -30px 30px 0px 0px #000, -10px 40px 0px 0px #000, -20px 40px 0px 0px #000,
+      -30px 40px 0px 0px #000, -40px 40px 0px 0px #000;
+  }
+}

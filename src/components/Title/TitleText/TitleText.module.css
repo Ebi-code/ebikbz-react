@@ -1,0 +1,51 @@
+.TitleText {
+  font-size: 72px;
+  text-align: left;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-left: 30px;
+  margin: 0;
+  transition: font-size 0.5s;
+  text-shadow: -2px -6px 2px rgb(3 3 3 / 60%);
+  font-family: "fugaz one";
+  letter-spacing: 4px;
+}
+
+.TitleText span {
+  display: block;
+}
+
+.ColoredText {
+  color: #fcd602;
+}
+
+.WhiteText {
+  color: #fff;
+}
+
+@media screen and (max-width: 1600px) {
+  .TitleText {
+    font-size: 62px;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .TitleText {
+    font-size: 72px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .TitleText {
+    font-size: 72px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .TitleText {
+    font-size: 56px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .TitleText {
+    font-size: 36px;
+  }
+}

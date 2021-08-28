@@ -1,0 +1,102 @@
+.Progress {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: rotate(45deg);
+  box-shadow: inset 2px 2px 6px 0px rgb(4 4 4 / 50%);
+}
+
+.ProgressBG {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  box-shadow: inset -2px -2px 4px 0px rgb(4 4 4 / 50%);
+  transition: all 0.4s;
+  background: rgb(241, 190, 65);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1be41",endColorstr="#edb93f",GradientType=1);
+}
+
+.Inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  border-radius: 20px;
+  transform: rotate(-45deg) translate(0, -50%);
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .Progress {
+    width: 120px;
+    height: 120px;
+  }
+  .Progress h2 {
+    font-size: 36px;
+  }
+  .Progress h3 {
+    font-size: 18px;
+    padding-top: 2px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Progress h2 {
+    font-size: 34px;
+  }
+  .Progress h3 {
+    font-size: 16px;
+    padding-top: 0;
+  }
+  .Progress {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Progress {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Progress {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 240px) {
+  .Progress {
+    width: 100px;
+    height: 100px;
+    margin-top: 70px;
+  }
+}

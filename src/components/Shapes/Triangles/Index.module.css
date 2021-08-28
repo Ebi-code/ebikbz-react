@@ -1,0 +1,42 @@
+.Triangles {
+  position: absolute;
+  width: 25px;
+}
+
+.Triangles span {
+  display: block;
+  width: 25px;
+  height: 22px;
+}
+
+.Triangles .Fill {
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-bottom: 22px solid #fff;
+}
+
+.Triangles .Stroke {
+  border-bottom: 1px solid #fff;
+}
+
+.Triangles .Stroke::before {
+  position: absolute;
+  content: "";
+  left: 6px;
+  width: 1px;
+  height: 21px;
+  transform: skewX(-30deg);
+  border-radius: 50em;
+  background-color: #fff;
+}
+
+.Triangles .Stroke::after {
+  position: absolute;
+  content: "";
+  left: 18px;
+  width: 1px;
+  height: 21px;
+  transform: skewX(30deg);
+  border-radius: 50em;
+  background-color: #fff;
+}

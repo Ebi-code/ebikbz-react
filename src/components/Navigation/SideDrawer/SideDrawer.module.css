@@ -1,0 +1,120 @@
+.SideDrawer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: -150%;
+  top: 0;
+  transform: rotate(0);
+  box-shadow: 5px 2px 16px 2px rgba(0, 0, 0, 6);
+  z-index: 500;
+  border-radius: 50px;
+  border: 10px solid #fff;
+  background: rgb(227, 178, 49);
+  transition: all 0.4s ease;
+  background: -moz-linear-gradient(
+    135deg,
+    rgba(227, 178, 49, 1) 0%,
+    rgba(231, 180, 63, 1) 25%,
+    rgba(165, 121, 24, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(227, 178, 49, 1) 0%,
+    rgba(231, 180, 63, 1) 25%,
+    rgba(165, 121, 24, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(227, 178, 49, 1) 0%,
+    rgba(231, 180, 63, 1) 25%,
+    rgba(165, 121, 24, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3b231",endColorstr="#a57918",GradientType=1);
+}
+
+.Open {
+  left: -55%;
+  transform: rotate(25deg);
+  animation: openSideDrawer 1s ease-in-out;
+}
+.Close {
+  visibility: hidden;
+  left: -150%;
+  animation: closeSideDrawer 0.4s ease-in-out;
+}
+
+.NavigationItems {
+  width: 100%;
+  transform: translate(20%, 30%) rotate(-0deg);
+}
+
+.Show {
+  transform: translate(20%, 30%) rotate(-25deg);
+  animation: showNavigation 1s ease-in-out;
+}
+
+.Hide {
+  transform: translate(-50%, 50%) rotate(0);
+  animation: hideNavigation 1s ease-in-out;
+}
+
+@keyframes openSideDrawer {
+  0% {
+    left: -150%;
+    transform: rotate(0);
+  }
+  50% {
+    left: -55%;
+    transform: rotate(0);
+  }
+  100% {
+    left: -55%;
+    transform: rotate(25deg);
+  }
+}
+
+@keyframes closeSideDrawer {
+  0% {
+    left: -55%;
+    transform: rotate(25deg);
+  }
+  50% {
+    left: -55%;
+    transform: rotate(0);
+  }
+  100% {
+    visibility: show;
+    left: -150%;
+    transform: rotate(0);
+  }
+}
+
+@keyframes showNavigation {
+  0% {
+    transform: translate(-100%, 30%) rotate(0);
+  }
+  50% {
+    transform: translate(-50%, 30%) rotate(-25deg);
+  }
+  100% {
+    transform: translate(20%, 30%) rotate(-25deg);
+  }
+}
+@keyframes hideNavigation {
+  0% {
+    transform: translate(20%, 30%) rotate(-25deg);
+  }
+  50% {
+    transform: translate(-100%, 30%) rotate(-25deg);
+  }
+  100% {
+    transform: translate(-100%, 30%) rotate(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .SideDrawer {
+    border-radius: 25px;
+    border-width: 5px;
+  }
+}

@@ -1,0 +1,80 @@
+.Media {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  text-align: center;
+  border: 4px solid #fff;
+  display: inline-block;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  background: rgb(241, 190, 65);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1be41",endColorstr="#edb93f",GradientType=1);
+  animation: spin 10s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Media a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  text-decoration: none;
+  font-family: "montserrat";
+  color: #000;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  animation: fixed 10s infinite linear;
+}
+
+@keyframes fixed {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.Media img {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .Media {
+    width: 70px;
+    height: 70px;
+  }
+}

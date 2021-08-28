@@ -1,0 +1,16 @@
+.Triangle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.Triangle span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 25px solid #000;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}

@@ -1,0 +1,72 @@
+.Contact .ContactBG {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  padding: 30px;
+  border: 4px solid #fff;
+  border-radius: 50px;
+  box-shadow: -2px -6px 4px 4px rgba(3, 3, 3, 0.4);
+  background: rgb(241, 190, 65);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(241, 190, 65, 1) 0%,
+    rgba(242, 192, 69, 1) 50%,
+    rgba(237, 185, 63, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1be41",endColorstr="#edb93f",GradientType=1);
+}
+
+.Contact button {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Contact .ContactBG {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .Contact .ContactBG {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Contact .ContactBG {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 15em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Contact .ContactBG {
+    margin-top: 20em;
+  }
+}
+@media screen and (max-height: 768px) {
+  .Contact .ContactBG {
+    margin-top: 8em;
+  }
+}
+@media screen and (max-height: 576px) {
+  .Contact .ContactBG {
+    margin-top: 25em;
+  }
+}
+@media screen and (max-height: 380px) {
+  .Contact .ContactBG {
+    margin-top: 32em;
+  }
+}

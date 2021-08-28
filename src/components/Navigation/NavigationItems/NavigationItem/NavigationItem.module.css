@@ -1,0 +1,78 @@
+.NavigationItem {
+  transition: all 0.4s;
+}
+
+.NavigationItem a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 18px;
+  color: #040404;
+  transition: background-color 0.4s ease;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.Active {
+  background-color: #040404;
+  color: #fff;
+  text-decoration: none;
+}
+
+.NavigationItem:not(:last-child) {
+  margin-right: 56px;
+}
+
+@media screen and (max-width: 1400px) {
+  .NavigationItem:not(:last-child) {
+    margin-right: 50px;
+  }
+  .NavigationItem a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .NavigationItem:not(:last-child) {
+    margin-right: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .NavigationItem:not(:last-child) {
+    margin: 0 0 48px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .NavigationItem:not(:last-child) {
+    margin: 0 0 38px 0;
+  }
+  .NavigationItem a {
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .NavigationItem:not(:last-child) {
+    margin: 0 0 36px 0;
+  }
+  .NavigationItem a {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .NavigationItem:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+  .NavigationItem a {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+}
